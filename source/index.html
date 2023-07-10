@@ -1,12 +1,85 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+    <!-- 32×32 -->
+    <link rel="icon" sizes="32x32" href="favicon.ico" />
+    <!-- 180×180 -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/favicons/apple-icon-180x180.png"
+    />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
+    <header class="header">
+      <svg width="86" height="35" viewBox="0 0 86 35">
+        <use href="img/sprite.svg#mishka-logo-mobile"></use>
+      </svg>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
-
+      <nav class="header__nav header__nav--nojs">
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link"> Каталог товаров </a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link"> Вязание на заказ </a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link"> Поиск по сайту </a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">Корзина: пока пуста</a>
+          </li>
+        </ul>
+        <button type="button" class="header__button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="title-block">
+        <h1 class="title-block__title">
+          Милые штуки <br class="title-block__gap-before" />
+          ручной <br class="title-block__gap-after" />
+          работы для дома
+        </h1>
+        <ul class="title-block__list">
+          <li class="title-block__item-interior">
+            <p class="title-block__item-text">Предметы интерьера</p>
+            <svg
+              width="40"
+              height="62"
+              viewBox="0 0 40 62"
+              class="title-block__interior-icon"
+            >
+              <use href="img/sprite.svg#interior"></use>
+            </svg>
+          </li>
+          <li class="title-block__item-toys">
+            <p class="title-block__item-text">Детские игрушки</p>
+            <svg
+              width="60"
+              height="60"
+              viewBox="0 0 60 60"
+              class="title-block__toy-icon"
+            >
+              <use href="img/sprite.svg#toy"></use>
+            </svg>
+          </li>
+        </ul>
+      </section>
+      <section class="knitted-baskets">
+        <div class="knitted-baskets__block">
+          <h2 class="knitted-baskets__title">Вязаные корзинки</h2>
+          <p class="knitted-baskets__designation">ТОВАР НЕДЕЛИ</p>
+        </div>
+      </section>
+    </main>
+    <script src="js/script.min.js"></script>
   </body>
 </html>
