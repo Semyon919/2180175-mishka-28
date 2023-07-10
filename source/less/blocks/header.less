@@ -1,0 +1,132 @@
+.header {
+  background-color: #ffffff;
+  min-height: 79px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 22px 0 22px 0;
+  position: relative;
+  width: 100%;
+}
+
+.header__nav {
+  position: absolute;
+  width: 100%;
+  min-height: 264px;
+  z-index: 1;
+  top: 79px;
+  left: 0;
+
+  &--nojs {
+    position: static;
+    min-height: 0;
+  }
+}
+
+.header__nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #ffffff;
+  display: none;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #ececec;
+    bottom: 0;
+  }
+}
+
+.header__nav-item {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #ececec;
+  }
+
+  &:nth-child(3) .header__nav-link {
+    background-image: url("../../img/navigation-search.svg");
+    background-repeat: no-repeat;
+    background-position: 45px 31px;
+  }
+
+  &:nth-child(4) {
+    background-image: url("../../img/navigation-cart.svg");
+    background-repeat: no-repeat;
+    background-position: 45px 31px;
+  }
+}
+
+.header-nav--opened .header__nav-list {
+  display: block;
+}
+
+.header__nav-link {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  font-family: "Opensans", sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #000000;
+  min-height: 79px;
+  text-align: center;
+  padding: 28px 65px 26px 76px;
+}
+
+.header__button {
+  position: absolute;
+  width: 20px;
+  height: 14px;
+  background-image: url("../../img/menu.svg");
+  background-repeat: no-repeat;
+  border: none;
+  padding: 0;
+  top: -48px;
+  right: 31px;
+}
+
+.header-nav--opened .header__button {
+  background-image: url("../../img/menu-cross.svg");
+  background-repeat: no-repeat;
+  width: 21px;
+  height: 20px;
+  background-color: #ffffff;
+}
+
+//nojs
+
+.header__nav--nojs .header__button {
+  display: none;
+}
+
+.header__nav--nojs .header__nav-list {
+  display: block;
+}
+
+//header white line
+
+.header__nav-item--index .header__nav-link {
+  position: relative;
+
+  &::before {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    right: 0;
+    top: 34px;
+    background-color: #ffffff;
+  }
+}
