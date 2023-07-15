@@ -1,7 +1,11 @@
+.knitted-baskets {
+  padding: 0 30px 0 30px;
+  position: relative;
+}
+
 .knitted-baskets__block {
   display: flex;
   flex-wrap: wrap;
-  width: 75%;
 }
 
 .knitted-baskets__title {
@@ -17,4 +21,82 @@
   line-height: 20px;
   margin: 0;
   color: rgba(99, 209, 187, 1);
+}
+
+.knitted-baskets__text {
+  display: block;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  width: 95%;
+  color: rgba(68, 68, 68, 1);
+}
+
+.knitted-baskets__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.knitted-baskets__item {
+  width: 100%;
+  min-height: 49px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(236, 236, 236, 1);
+    bottom: 0;
+  }
+
+  &:nth-child(1) .knitted-baskets__item-gap {
+    margin: 0 0 0 30px;
+  }
+
+  &:nth-child(2) .knitted-baskets__item-gap {
+    margin: 0 0 0 30px;
+  }
+
+  &:nth-child(3) .knitted-baskets__item-gap {
+    margin: 0 0 0 30px;
+  }
+}
+
+.knitted-baskets__item-title {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0;
+}
+
+.knitted-baskets__background {
+  width: 260px;
+  height: 315px;
+  background-image: url("../../img/knitted-basket-mobile.jpg");
+  background-repeat: no-repeat;
+}
+
+.knitted-baskets__cost {
+  display: block;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+  color: #444444;
+}
+
+.knitted-baskets__button {
+  font-family: "OpenSans", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+  color: rgba(68, 68, 68, 1);
+  width: 100%;
+  min-height: 52px;
+  padding: 0;
+  border: 2px solid #444444;
 }
