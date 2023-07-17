@@ -17,10 +17,12 @@
   </head>
   <body>
     <header class="header">
-      <svg width="86" height="35" viewBox="0 0 86 35">
-        <use href="img/sprite.svg#mishka-logo-mobile"></use>
-      </svg>
-
+      <a href="#" class="header__link">
+        <svg width="86" height="35" viewBox="0 0 86 35">
+          <use href="img/sprite.svg#mishka-logo-mobile"></use>
+        </svg>
+        <span class="visually-hidden">Логотип Mishka</span>
+      </a>
       <nav class="header__nav header__nav--nojs">
         <ul class="header__nav-list">
           <li class="header__nav-item">
@@ -50,26 +52,10 @@
         </h1>
         <ul class="title-block__list">
           <li class="title-block__item-interior">
-            <p class="title-block__item-text">Предметы интерьера</p>
-            <svg
-              width="40"
-              height="62"
-              viewBox="0 0 40 62"
-              class="title-block__interior-icon"
-            >
-              <use href="img/sprite.svg#interior"></use>
-            </svg>
+            <a href="#" class="title-block__item-link">Предметы интерьера</a>
           </li>
           <li class="title-block__item-toys">
-            <p class="title-block__item-text">Детские игрушки</p>
-            <svg
-              width="60"
-              height="60"
-              viewBox="0 0 60 60"
-              class="title-block__toy-icon"
-            >
-              <use href="img/sprite.svg#toy"></use>
-            </svg>
+            <a href="" class="title-block__item-link">Детские игрушки</a>
           </li>
         </ul>
       </section>
@@ -82,36 +68,69 @@
           >Экологически чистая пряжа, ручная работа. Доступны в шести расцветках
           и трёх размерах.</span
         >
-        <ul class="knitted-baskets__list">
-          <li class="knitted-baskets__item">
-            <p class="knitted-baskets__item-title">
-              Цвет: <span class="knitted-baskets__item-gap">тиффани/серый</span>
-            </p>
-          </li>
-          <li class="knitted-baskets__item">
-            <p class="knitted-baskets__item-title">
-              Диаметр:
-              <span class="knitted-baskets__item-gap">25см</span>
-            </p>
-          </li>
-          <li class="knitted-baskets__item">
-            <p class="knitted-baskets__item-title">
-              Высота:
-              <span class="knitted-baskets__item-gap">15см</span>
-            </p>
-          </li>
-        </ul>
-        <div class="knitted-baskets__background"></div>
+        <dl class="knitted-baskets__list">
+          <div class="knitted-baskets__line">
+            <dt class="knitted-baskets__item-title">Цвет:</dt>
+            <dd class="knitted-baskets__item-gap">тиффани/серый</dd>
+          </div>
+          <div class="knitted-baskets__line">
+            <dt class="knitted-baskets__item-title">Диаметр:</dt>
+            <dd class="knitted-baskets__item-gap">25 см</dd>
+          </div>
+          <div class="knitted-baskets__line">
+            <dt class="knitted-baskets__item-title">Высота:</dt>
+            <dd class="knitted-baskets__item-gap">15 см</dd>
+          </div>
+        </dl>
+        <picture>
+          <source
+            type="image/webp"
+            media="(min-width: 1150px)"
+            srcset="
+              img/knitted-basket-desktop.webp    1x,
+              img/knitted-basket-desktop@2x.webp 2x
+            "
+          />
+          <source
+            type="image/webp"
+            media="(min-width: 768px)"
+            srcset="
+              img/knitted-basket-tablet.webp    1x,
+              img/knitted-basket-tablet@2x.webp 2x
+            "
+          />
+          <source
+            type="image/webp"
+            srcset="
+              img/knitted-basket-mobile.webp    1x,
+              img/knitted-basket-mobile@2x.webp 2x
+            "
+          />
+          <source
+            media="(min-width: 1150px)"
+            srcset="
+              img/knitted-basket-desktop.jpg,
+              img/knitted-basket-desktop@2x.jpg 2x
+            "
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              img/knitted-basket-tablet.jpg,
+              img/knitted-basket-tablet@2x.jpg 2x
+            "
+          />
+          <img
+            src="img/knitted-basket-mobile.jpg"
+            srcset="img/knitted-basket-mobile@2x.webp 2x"
+            width="260"
+            height="315"
+            class="knitted-baskets__image"
+            alt="Вязаная корзинка"
+          />
+        </picture>
         <span class="knitted-baskets__cost">Цена: 990 руб.</span>
-        <button type="button" class="knitted-baskets__button">ЗАКАЗАТЬ</button>
-        <svg
-          width="320"
-          height="6"
-          viewBox="0 0 320 6"
-          class="knitted-baskets__zigzag-line"
-        >
-          <use href="img/sprite.svg#zigzag-line-mobile"></use>
-        </svg>
+        <a href="#" class="knitted-baskets__link">ЗАКАЗАТЬ</a>
       </section>
       <section class="short-info">
         <h2 class="short-info__title">Коротко о нас:</h2>
@@ -161,7 +180,8 @@
               <use href="img/sprite.svg#tangle-list"></use>
             </svg>
             <p class="short-info__text">
-              Связано вручную с любовью и умилением
+              Связано вручную <br class="short-info__gap" />
+              с любовью и умилением
             </p>
           </li>
           <li class="short-info__item">
@@ -186,56 +206,30 @@
             >
               <use href="img/sprite.svg#gift-list"></use>
             </svg>
-            <p class="short-info__text">Поставляется в подарочной упаковке</p>
+            <p class="short-info__text">
+              Поставляется <br class="short-info__gap" />
+              в подарочной упаковке
+            </p>
           </li>
         </ul>
       </section>
       <section class="reviews">
         <h2 class="reviews__title">Отзывы</h2>
-        <span class="reviews__text"
-          >Я молодая мама, но всё равно фотографии не набирали и близко такого
-          количества лайков, как <br />
-          у популярных инстамамочек.<br />
-          В отчаянии, я накупила<br />
-          аксессуаров и игрушек в Мишке, <br />
-          и мои фотографии сразу стали более стильными, а также <br />
-          набирают больше лайков!</span
-        >
+        <p class="reviews__text">
+          Я молодая мама, но всё равно фотографии не набирали и близко такого
+          количества лайков, как у популярных инстамамочек. В отчаянии, я
+          накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали
+          более стильными, а также набирают больше лайков!
+        </p>
         <div class="reviews__line">
           <p class="reviews__initials">
             Анастасия Красильникова
-            <span class="reviews__initials-gap"> @misssssiskras</span>
+            <a href="#" class="reviews__initials-gap"> @misssssiskras</a>
           </p>
-          <button type="button" class="reviews__button-left">
-            <svg
-              width="50"
-              height="26"
-              viewBox="0 0 50 26"
-              class="reviews__arrow-left"
-            >
-              <use href="img/sprite.svg#arrow-left"></use>
-            </svg>
-          </button>
-          <button type="button" class="reviews__button-right">
-            <svg
-              width="50"
-              height="26"
-              viewBox="0 0 50 26"
-              class="reviews__arrow-right"
-            >
-              <use href="img/sprite.svg#arrow-right"></use>
-            </svg>
-          </button>
+          <button type="button" class="reviews__button-left"></button>
+          <button type="button" class="reviews__button-right"></button>
         </div>
         <button type="button" class="reviews__button">Написать</button>
-        <svg
-          width="320"
-          height="6"
-          viewBox="0 0 320 6"
-          class="reviews__zigzag-line"
-        >
-          <use href="img/sprite.svg#zigzag-line-mobile"></use>
-        </svg>
       </section>
       <section class="contacts">
         <h2 class="contacts__title">Контакты</h2>
@@ -295,43 +289,49 @@
             />
           </picture>
         </div>
-        <button type="button" class="contacts__button">НАпишите нам</button>
+        <a href="#" class="contacts__link">НАпишите нам</a>
       </section>
     </main>
     <footer class="footer">
       <ul class="footer__list">
         <li class="footer__item">
-          <svg width="27" height="18" viewBox="0 0 27 18" class="footer__vk">
-            <use href="img/sprite.svg#footer-vk"></use>
-          </svg>
+          <a href="#" class="footer__link">
+            <svg width="27" height="18" viewBox="0 0 27 18" class="footer__vk">
+              <use href="img/sprite.svg#footer-vk"></use>
+            </svg>
+          </a>
         </li>
         <li class="footer__item">
-          <svg
-            width="24"
-            height="20"
-            viewBox="0 0 24 20"
-            class="footer__youtube"
-          >
-            <use href="img/sprite.svg#footer-youtube"></use>
-          </svg>
+          <a href="#" class="footer__link">
+            <svg
+              width="24"
+              height="20"
+              viewBox="0 0 24 20"
+              class="footer__youtube"
+            >
+              <use href="img/sprite.svg#footer-youtube"></use>
+            </svg>
+          </a>
         </li>
         <li class="footer__item">
-          <svg
-            width="20"
-            height="18"
-            viewBox="0 0 20 18"
-            class="footer__telegram"
-          >
-            <use href="img/sprite.svg#footer-telegram"></use>
-          </svg>
+          <a href="#" class="footer__link">
+            <svg
+              width="20"
+              height="18"
+              viewBox="0 0 20 18"
+              class="footer__telegram"
+            >
+              <use href="img/sprite.svg#footer-telegram"></use>
+            </svg>
+          </a>
         </li>
       </ul>
-      <div class="footer__block">
+      <a href="#" class="footer__block">
         <p class="footer__text">Разработано</p>
         <svg width="27" height="35" viewBox="0 0 27 35" class="footer__logo">
           <use href="img/sprite.svg#htmlacademy-footer"></use>
         </svg>
-      </div>
+      </a>
     </footer>
     <script src="js/script.min.js"></script>
   </body>

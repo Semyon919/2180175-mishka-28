@@ -1,12 +1,13 @@
 .short-info {
   padding: 0 30px 0 30px;
+  margin: 0 0 53px 0;
 }
 
 .short-info__title {
   font-size: 25px;
   font-weight: 700;
   line-height: 30px;
-  margin: 0;
+  margin: 0 0 28px 0;
 }
 
 .short-info__list {
@@ -15,9 +16,31 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  gap: 30px;
 }
 
 .short-info__item {
+  margin: 0 0 0 0;
+
+  &:nth-child(3) {
+    padding: 4px 0 0 0;
+  }
+
+  &:nth-child(1) .short-info__text {
+    width: 70%;
+  }
+
+  &:nth-child(2) .short-info__text {
+    width: 80%;
+  }
+
+  &:nth-child(3) .short-info__text {
+    width: 70%;
+  }
+
+  &:nth-child(4) .short-info__text {
+    width: 90%;
+  }
 }
 
 .short-info__text {
@@ -25,4 +48,28 @@
   font-weight: 700;
   line-height: 20px;
   margin: 0;
+}
+
+.short-info__flower-icon {
+  margin: 0 0 12px 8px;
+}
+
+.short-info__cost-icon {
+  margin: 0 0 23px 0;
+}
+
+.short-info__heart-icon {
+  margin: 0 0 18px 6px;
+}
+
+.short-info__tangle-icon {
+  margin: 0 0 14px 2px;
+}
+
+.short-info__rocket-icon {
+  margin: 0 0 23px -6px;
+}
+
+.short-info__gift-icon {
+  margin: -3px 0 17px 3px;
 }
