@@ -1,5 +1,5 @@
 .knitted-baskets {
-  padding: 0 30px 0 30px;
+  padding: 0 30px;
   position: relative;
   min-height: 795px;
   margin: 0 0 31px 0;
@@ -13,6 +13,11 @@
     width: 100%;
     height: 6px;
     bottom: 0;
+    left: 0;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 0 50px;
   }
 }
 
@@ -20,6 +25,10 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 0 33px 0;
+  }
 }
 
 .knitted-baskets__title {
@@ -27,6 +36,12 @@
   font-weight: 700;
   line-height: 30px;
   margin: 0 0 4px 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 43px;
+    font-weight: 700;
+    line-height: 50px;
+  }
 }
 
 .knitted-baskets__designation {
@@ -35,6 +50,18 @@
   line-height: 20px;
   margin: 0 0 17px 0;
   color: #63d1bb;
+
+  @media (min-width: @tablet-width) {
+    line-height: 17px;
+    text-align: center;
+    width: 19%;
+    margin: 5px 0 0 0;
+  }
+}
+
+.knitted-baskets__line-block {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .knitted-baskets__text {
@@ -45,6 +72,14 @@
   width: 96%;
   color: #444444;
   margin: 0 0 28px 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 17px;
+    line-height: 30px;
+    text-align: left;
+    width: 43%;
+    margin: 0 0 47px 0;
+  }
 }
 
 .knitted-baskets__list {
@@ -53,6 +88,10 @@
   font-size: 15px;
   font-weight: 400;
   line-height: 20px;
+
+  @media (min-width: @tablet-width) {
+    width: 44%;
+  }
 }
 
 .knitted-baskets__line {
@@ -82,6 +121,20 @@
   &:nth-child(3) {
     padding: 0 123px 0 0;
   }
+
+  @media (min-width: @tablet-width) {
+    &:nth-child(1) {
+      padding: 0 80px 0 0;
+    }
+
+    &:nth-child(2) {
+      padding: 0 158px 0 0;
+    }
+
+    &:nth-child(3) {
+      padding: 0 158px 0 0;
+    }
+  }
 }
 
 .knitted-baskets__item-title {
@@ -97,6 +150,11 @@
 
 .knitted-baskets__image {
   margin: 0 0 22px 0;
+
+  @media (min-width: @tablet-width) {
+    width: 334px;
+    height: 404px;
+  }
 }
 
 .knitted-baskets__cost {
@@ -107,6 +165,10 @@
   text-align: center;
   color: #444444;
   margin: 0 0 24px 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+  }
 }
 
 .knitted-baskets__link {
@@ -121,4 +183,8 @@
   min-height: 52px;
   padding: 14px 70px;
   border: 2px solid #444444;
+
+  @media (min-width: @tablet-width) {
+    width: 44%;
+  }
 }
