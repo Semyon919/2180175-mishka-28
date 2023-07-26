@@ -15,6 +15,20 @@
     bottom: 0;
     left: 0;
   }
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../../img/reviews-tablet-background.jpg");
+    background-repeat: no-repeat;
+    padding: 83px 50px 50px 50px;
+    display: grid;
+    grid-template-rows: 90px 178px 100px;
+    min-height: 539px;
+    margin: 0 0 71px 0;
+
+    &::before {
+      height: 14px;
+    }
+  }
 }
 
 .reviews__title {
@@ -22,6 +36,13 @@
   font-weight: 700;
   line-height: 30px;
   margin: 0 0 14px 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+    margin: 0 0 39px 0;
+    grid-row: 1;
+  }
 }
 
 .reviews__text {
@@ -30,12 +51,29 @@
   line-height: 30px;
   color: #444444;
   margin: 0 0 34px 0;
+
+  @media (min-width: @tablet-width) {
+    width: 132%;
+    font-size: 17px;
+    margin: 0;
+    grid-row: 2;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 110%;
+  }
 }
 
 .reviews__line {
   display: flex;
   flex-wrap: wrap;
   margin: 0 0 38px 0;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    grid-row: 3;
+    position: relative;
+  }
 }
 
 .reviews__initials {
@@ -44,6 +82,11 @@
   line-height: 24px;
   margin: 0 0 29px 0;
   width: 100%;
+
+  @media (min-width: @tablet-width) {
+    width: 75%;
+    font-size: 18px;
+  }
 }
 
 .reviews__initials-gap {
@@ -65,6 +108,16 @@
   background-image: url("../../img/arrow-left.svg");
   background-repeat: no-repeat;
   background-position: 49% center;
+
+  @media (min-width: @tablet-width) {
+    border: none;
+    padding: 0;
+    width: 10%;
+    background-color: inherit;
+    position: absolute;
+    bottom: 6px;
+    right: -69px;
+  }
 }
 
 .reviews__button-right {
@@ -77,6 +130,16 @@
   background-image: url("../../img/arrow-right.svg");
   background-repeat: no-repeat;
   background-position: 49% center;
+
+  @media (min-width: @tablet-width) {
+    border: none;
+    padding: 0;
+    width: 10%;
+    background-color: inherit;
+    position: absolute;
+    bottom: 6px;
+    right: -155px;
+  }
 }
 
 .reviews__button {
@@ -91,4 +154,10 @@
   color: #444444;
   border: #444444 solid 2px;
   background-color: #ffffff;
+
+  @media (min-width: @tablet-width) {
+    width: 175px;
+    grid-row: 1;
+    margin: -5px 0 0 0;
+  }
 }

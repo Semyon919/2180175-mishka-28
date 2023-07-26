@@ -34,6 +34,14 @@
         >
           <use href="img/sprite.svg#mishka-logo-tablet"></use>
         </svg>
+        <svg
+          width="149"
+          height="72"
+          viewBox="0 0 149 72"
+          class="header__logo-desktop"
+        >
+          <use href="img/sprite.svg#mishka-logo-desktop"></use>
+        </svg>
 
         <span class="visually-hidden">Логотип Mishka</span>
       </a>
@@ -57,6 +65,12 @@
             <a href="#" class="header__tablet-link"
               >Бесплатная доставка по России</a
             >
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__desktop-link">Новые поступления</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__desktop-link">Распродажа</a>
           </li>
         </ul>
         <button type="button" class="header__button">
@@ -85,73 +99,75 @@
           <h2 class="knitted-baskets__title">Вязаные корзинки</h2>
           <p class="knitted-baskets__designation">ТОВАР НЕДЕЛИ</p>
         </div>
-        <span class="knitted-baskets__text"
-          >Экологически чистая пряжа, ручная работа. Доступны в шести расцветках
-          и трёх размерах.</span
-        >
-        <dl class="knitted-baskets__list">
-          <div class="knitted-baskets__line">
-            <dt class="knitted-baskets__item-title">Цвет:</dt>
-            <dd class="knitted-baskets__item-gap">тиффани/серый</dd>
-          </div>
-          <div class="knitted-baskets__line">
-            <dt class="knitted-baskets__item-title">Диаметр:</dt>
-            <dd class="knitted-baskets__item-gap">25 см</dd>
-          </div>
-          <div class="knitted-baskets__line">
-            <dt class="knitted-baskets__item-title">Высота:</dt>
-            <dd class="knitted-baskets__item-gap">15 см</dd>
-          </div>
-        </dl>
-        <picture>
-          <source
-            type="image/webp"
-            media="(min-width: 1150px)"
-            srcset="
-              img/knitted-basket-desktop.webp    1x,
-              img/knitted-basket-desktop@2x.webp 2x
-            "
-          />
-          <source
-            type="image/webp"
-            media="(min-width: 768px)"
-            srcset="
-              img/knitted-basket-tablet.webp    1x,
-              img/knitted-basket-tablet@2x.webp 2x
-            "
-          />
-          <source
-            type="image/webp"
-            srcset="
-              img/knitted-basket-mobile.webp    1x,
-              img/knitted-basket-mobile@2x.webp 2x
-            "
-          />
-          <source
-            media="(min-width: 1150px)"
-            srcset="
-              img/knitted-basket-desktop.jpg,
-              img/knitted-basket-desktop@2x.jpg 2x
-            "
-          />
-          <source
-            media="(min-width: 768px)"
-            srcset="
-              img/knitted-basket-tablet.jpg,
-              img/knitted-basket-tablet@2x.jpg 2x
-            "
-          />
-          <img
-            src="img/knitted-basket-mobile.jpg"
-            srcset="img/knitted-basket-mobile@2x.webp 2x"
-            width="260"
-            height="315"
-            class="knitted-baskets__image"
-            alt="Вязаная корзинка"
-          />
-        </picture>
-        <span class="knitted-baskets__cost">Цена: 990 руб.</span>
-        <a href="#" class="knitted-baskets__link">ЗАКАЗАТЬ</a>
+        <div class="knitted-baskets__line-block">
+          <span class="knitted-baskets__text"
+            >Экологически чистая пряжа, ручная работа. Доступны в шести
+            расцветках и трёх размерах.</span
+          >
+          <dl class="knitted-baskets__list">
+            <div class="knitted-baskets__line">
+              <dt class="knitted-baskets__item-title">Цвет:</dt>
+              <dd class="knitted-baskets__item-gap">тиффани/серый</dd>
+            </div>
+            <div class="knitted-baskets__line">
+              <dt class="knitted-baskets__item-title">Диаметр:</dt>
+              <dd class="knitted-baskets__item-gap">25 см</dd>
+            </div>
+            <div class="knitted-baskets__line">
+              <dt class="knitted-baskets__item-title">Высота:</dt>
+              <dd class="knitted-baskets__item-gap">15 см</dd>
+            </div>
+          </dl>
+          <picture>
+            <source
+              type="image/webp"
+              media="(min-width: 1150px)"
+              srcset="
+                img/knitted-basket-desktop.webp    1x,
+                img/knitted-basket-desktop@2x.webp 2x
+              "
+            />
+            <source
+              type="image/webp"
+              media="(min-width: 768px)"
+              srcset="
+                img/knitted-basket-tablet.webp    1x,
+                img/knitted-basket-tablet@2x.webp 2x
+              "
+            />
+            <source
+              type="image/webp"
+              srcset="
+                img/knitted-basket-mobile.webp    1x,
+                img/knitted-basket-mobile@2x.webp 2x
+              "
+            />
+            <source
+              media="(min-width: 1150px)"
+              srcset="
+                img/knitted-basket-desktop.jpg,
+                img/knitted-basket-desktop@2x.jpg 2x
+              "
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                img/knitted-basket-tablet.jpg,
+                img/knitted-basket-tablet@2x.jpg 2x
+              "
+            />
+            <img
+              src="img/knitted-basket-mobile.jpg"
+              srcset="img/knitted-basket-mobile@2x.webp 2x"
+              width="260"
+              height="315"
+              class="knitted-baskets__image"
+              alt="Вязаная корзинка"
+            />
+          </picture>
+          <span class="knitted-baskets__cost">Цена: 990 руб.</span>
+          <a href="#" class="knitted-baskets__link">ЗАКАЗАТЬ</a>
+        </div>
       </section>
       <section class="short-info">
         <h2 class="short-info__title">Коротко о нас:</h2>
@@ -279,43 +295,54 @@
             frameborder="0"
             title="Расположение Mishka на карте"
           ></iframe>
-          <picture>
-            <source
-              type="image/webp"
-              media="(min-width: 1150px)"
-              srcset="img/map-desktop.webp 1x, img/map-desktop@2x.webp 2x"
-            />
-            <source
-              type="image/webp"
-              media="(min-width: 768px)"
-              srcset="img/map-tablet.webp 1x, img/map-tablet@2x.webp 2x"
-            />
-            <source
-              type="image/webp"
-              srcset="img/map-mobile.webp 1x, img/map-mobile@2x.webp 2x"
-            />
-            <source
-              media="(min-width: 1150px)"
-              srcset="img/map-desktop.jpg, img/img/map-desktop@2x.jpg 2x"
-            />
-            <source
-              media="(min-width: 768px)"
-              srcset="img/map-tablet.jpg, img/map-tablet@2x.jpg 2x"
-            />
-            <img
-              src="img/map-mobile.jpg"
-              srcset="img/map-mobile@2x.webp 2x"
-              class="map__image"
-              width="320"
-              height="455"
-              alt="Карта Мишки"
-            />
-          </picture>
+          <noscript>
+            <picture>
+              <source
+                type="image/webp"
+                media="(min-width: 1150px)"
+                srcset="img/map-desktop.webp 1x, img/map-desktop@2x.webp 2x"
+              />
+              <source
+                type="image/webp"
+                media="(min-width: 768px)"
+                srcset="img/map-tablet.webp 1x, img/map-tablet@2x.webp 2x"
+              />
+              <source
+                type="image/webp"
+                srcset="img/map-mobile.webp 1x, img/map-mobile@2x.webp 2x"
+              />
+              <source
+                media="(min-width: 1150px)"
+                srcset="img/map-desktop.jpg, img/img/map-desktop@2x.jpg 2x"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="img/map-tablet.jpg, img/map-tablet@2x.jpg 2x"
+              />
+              <img
+                src="img/map-mobile.jpg"
+                srcset="img/map-mobile@2x.webp 2x"
+                class="map__image"
+                width="320"
+                height="455"
+                alt="Карта Мишки"
+              />
+            </picture>
+          </noscript>
         </div>
         <a href="#" class="contacts__link">НАпишите нам</a>
       </section>
     </main>
     <footer class="footer">
+      <svg
+        width="102"
+        height="34"
+        viewBox="0 0 102 34"
+        class="footer__logo-tablet"
+      >
+        <use href="img/sprite.svg#logo-tablet-footer"></use>
+      </svg>
+
       <ul class="footer__list">
         <li class="footer__item">
           <a href="#" class="footer__link">

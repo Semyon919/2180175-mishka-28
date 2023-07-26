@@ -18,6 +18,24 @@
 
   @media (min-width: @tablet-width) {
     padding: 0 50px;
+    min-height: 570px;
+    margin: 0 0 68px 0;
+
+    &::before {
+      height: 14px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 50px 0 225px;
+    min-height: 671px;
+
+    &::before {
+      width: 1050px;
+      background-image: url("../../img/zigzag-line-desktop.svg");
+      height: 23px;
+      left: 51px;
+    }
   }
 }
 
@@ -28,6 +46,11 @@
 
   @media (min-width: @tablet-width) {
     margin: 0 0 33px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    justify-content: inherit;
+    gap: 43px;
   }
 }
 
@@ -41,6 +64,11 @@
     font-size: 43px;
     font-weight: 700;
     line-height: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
   }
 }
 
@@ -57,11 +85,17 @@
     width: 19%;
     margin: 5px 0 0 0;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 100px;
+    order: -1;
+    margin: 8px 0 0 -143px;
+  }
 }
 
 .knitted-baskets__line-block {
-  display: flex;
-  flex-wrap: wrap;
+  position: relative;
+  min-height: 438px;
 }
 
 .knitted-baskets__text {
@@ -80,6 +114,11 @@
     width: 43%;
     margin: 0 0 47px 0;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 292px;
+    margin: 0 0 58px 0;
+  }
 }
 
 .knitted-baskets__list {
@@ -91,6 +130,12 @@
 
   @media (min-width: @tablet-width) {
     width: 44%;
+    margin: 0 0 71px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 291px;
+    margin: 0 0 125px 0;
   }
 }
 
@@ -135,6 +180,20 @@
       padding: 0 158px 0 0;
     }
   }
+
+  @media (min-width: @desktop-width) {
+    &:nth-child(1) {
+      padding: 0 77px 0 0;
+    }
+
+    &:nth-child(2) {
+      padding: 0 154px 0 0;
+    }
+
+    &:nth-child(3) {
+      padding: 0 154px 0 0;
+    }
+  }
 }
 
 .knitted-baskets__item-title {
@@ -154,6 +213,16 @@
   @media (min-width: @tablet-width) {
     width: 334px;
     height: 404px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 525px;
+    height: 636px;
+    z-index: -1;
+    bottom: -22px;
   }
 }
 
@@ -168,6 +237,12 @@
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
+    width: 43%;
+    margin: 0 0 32px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 292px;
   }
 }
 
@@ -186,5 +261,10 @@
 
   @media (min-width: @tablet-width) {
     width: 44%;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 17px;
+    width: 292px;
   }
 }

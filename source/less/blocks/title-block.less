@@ -28,6 +28,16 @@
       display: none;
     }
   }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../../img/title-background-desktop.jpg");
+    background-position: center -89px;
+    padding: 69px 50px 0 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+  }
 }
 
 .title-block__title {
@@ -40,9 +50,14 @@
 
   @media (min-width: @tablet-width) {
     font-size: 43px;
-    font-weight: 700;
     line-height: 50px;
     margin: 0 0 371px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+    margin: 0 0 355px 0;
   }
 }
 
@@ -76,6 +91,15 @@
       height: 24px;
     }
   }
+
+  @media (min-width: @desktop-width) {
+    &::before {
+      background-image: url("../../img/zigzag-desktop-title.svg");
+      width: calc(100% + 100px);
+      left: -50px;
+      bottom: -7px;
+    }
+  }
 }
 
 .title-block__item-interior {
@@ -92,6 +116,10 @@
   @media (min-width: @tablet-width) {
     width: 50%;
     min-height: 119px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-position: 449px center;
   }
 }
 
@@ -111,6 +139,10 @@
     min-height: 119px;
     background-position: 88% center;
   }
+
+  @media (min-width: @desktop-width) {
+    background-position: 430px center;
+  }
 }
 
 .title-block__item-link {
@@ -129,5 +161,9 @@
     font-weight: 700;
     line-height: 30px;
     padding: 25px 180px 35px 36px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 25px 370px 34px 37px;
   }
 }

@@ -1,6 +1,15 @@
 .short-info {
   padding: 0 30px 0 30px;
   margin: 0 0 53px 0;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 50px;
+    margin: 0 0 81px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 225px;
+  }
 }
 
 .short-info__title {
@@ -8,6 +17,17 @@
   font-weight: 700;
   line-height: 30px;
   margin: 0 0 28px 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+    margin: 0 0 40px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .short-info__list {
@@ -17,6 +37,16 @@
   padding: 0;
   list-style: none;
   gap: 30px;
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: 279px 325px;
+    grid-template-rows: inherit;
+    gap: 56px;
+  }
+
+  @media (min-width: @desktop-width) {
+    gap: 56px 71px;
+  }
 }
 
 .short-info__item {
@@ -41,6 +71,45 @@
   &:nth-child(4) .short-info__text {
     width: 90%;
   }
+
+  @media (min-width: @tablet-width) {
+    &:nth-child(1) {
+      order: -1;
+    }
+
+    &:nth-child(2) {
+      order: 3;
+    }
+
+    &:nth-child(3) {
+      order: 5;
+    }
+
+    &:nth-child(4) {
+      order: -1;
+      padding: 4px 0 0 0;
+    }
+
+    &:nth-child(5) {
+      order: 4;
+    }
+
+    &:nth-child(6) {
+      order: 6;
+    }
+
+    &:nth-child(1) .short-info__text {
+      width: 80%;
+    }
+
+    &:nth-child(2) .short-info__text {
+      width: 90%;
+    }
+
+    &:nth-child(3) .short-info__text {
+      width: 80%;
+    }
+  }
 }
 
 .short-info__text {
@@ -48,14 +117,27 @@
   font-weight: 700;
   line-height: 20px;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 22px;
+  }
 }
 
 .short-info__flower-icon {
   margin: 0 0 12px 8px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 0 15px 8px;
+  }
 }
 
 .short-info__cost-icon {
   margin: 0 0 23px 0;
+
+  @media (min-width: @desktop-width) {
+    margin: 0 0 21px 0;
+  }
 }
 
 .short-info__heart-icon {
@@ -64,12 +146,28 @@
 
 .short-info__tangle-icon {
   margin: 0 0 14px 2px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 0 16px 2px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 0 15px 2px;
+  }
 }
 
 .short-info__rocket-icon {
   margin: 0 0 23px -6px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 0 27px -7px;
+  }
 }
 
 .short-info__gift-icon {
   margin: -3px 0 17px 3px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 0 19px 2px;
+  }
 }

@@ -2,6 +2,10 @@
   position: relative;
   margin-bottom: 42px;
   height: 455px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 57px;
+  }
 }
 
 .map__frame {
@@ -10,9 +14,21 @@
   border: none;
   z-index: 1;
   left: -30px;
+
+  @media (min-width: @tablet-width) {
+    width: calc(100% + 100px);
+    left: -50px;
+  }
 }
 
 .map__image {
-  width: 100%;
+  width: calc(100% + 60px);
+  left: -30px;
   position: absolute;
+  z-index: 2;
+
+  @media (min-width: @tablet-width) {
+    width: calc(100% + 100px);
+    left: -50px;
+  }
 }
