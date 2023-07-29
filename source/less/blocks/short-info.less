@@ -9,6 +9,7 @@
 
   @media (min-width: @desktop-width) {
     padding: 0 225px;
+    margin: 0 0 88px 0;
   }
 }
 
@@ -51,9 +52,40 @@
 
 .short-info__item {
   margin: 0 0 0 0;
+  background-repeat: no-repeat;
+
+  &:nth-child(1) {
+    padding: 55px 0 0 0;
+    background-image: url("../../img/flower-list.svg");
+    background-position: 8px 0;
+  }
+
+  &:nth-child(2) {
+    padding: 54px 0 0 0;
+    background-image: url("../../img/cost-list.svg");
+  }
 
   &:nth-child(3) {
-    padding: 4px 0 0 0;
+    padding: 53px 0 0 0;
+    background-image: url("../../img/heart-list.svg");
+    background-position: 7px 4px;
+  }
+
+  &:nth-child(4) {
+    padding: 52px 0 0 0;
+    background-image: url("../../img/tangle-list.svg");
+    background-position: 3px 0;
+  }
+
+  &:nth-child(5) {
+    padding: 50px 0 0 0;
+    background-image: url("../../img/rocket-list.svg");
+  }
+
+  &:nth-child(6) {
+    padding: 50px 0 0 0;
+    background-image: url("../../img/gift-list.svg");
+    background-position: 3px 0;
   }
 
   &:nth-child(1) .short-info__text {
@@ -75,27 +107,32 @@
   @media (min-width: @tablet-width) {
     &:nth-child(1) {
       order: -1;
+      padding: 57px 0 0 0;
     }
 
     &:nth-child(2) {
       order: 3;
+      padding: 54px 0 0 0;
     }
 
     &:nth-child(3) {
       order: 5;
+      padding: 55px 0 0 0;
     }
 
     &:nth-child(4) {
       order: -1;
-      padding: 4px 0 0 0;
+      padding: 58px 0 0 0;
     }
 
     &:nth-child(5) {
       order: 4;
+      padding: 54px 0 0 0;
     }
 
     &:nth-child(6) {
       order: 6;
+      padding: 55px 0 0 0;
     }
 
     &:nth-child(1) .short-info__text {
@@ -110,6 +147,24 @@
       width: 80%;
     }
   }
+
+  @media (min-width: @desktop-width) {
+    &:nth-child(1) {
+      padding: 56px 0 0 0;
+    }
+
+    &:nth-child(2) {
+      padding: 52px 0 0 0;
+    }
+
+    &:nth-child(3) {
+      padding: 53px 0 0 0;
+    }
+
+    &:nth-child(4) {
+      padding: 57px 0 0 0;
+    }
+  }
 }
 
 .short-info__text {
@@ -121,53 +176,5 @@
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 22px;
-  }
-}
-
-.short-info__flower-icon {
-  margin: 0 0 12px 8px;
-
-  @media (min-width: @tablet-width) {
-    margin: 0 0 15px 8px;
-  }
-}
-
-.short-info__cost-icon {
-  margin: 0 0 23px 0;
-
-  @media (min-width: @desktop-width) {
-    margin: 0 0 21px 0;
-  }
-}
-
-.short-info__heart-icon {
-  margin: 0 0 18px 6px;
-}
-
-.short-info__tangle-icon {
-  margin: 0 0 14px 2px;
-
-  @media (min-width: @tablet-width) {
-    margin: 0 0 16px 2px;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin: 0 0 15px 2px;
-  }
-}
-
-.short-info__rocket-icon {
-  margin: 0 0 23px -6px;
-
-  @media (min-width: @tablet-width) {
-    margin: 0 0 27px -7px;
-  }
-}
-
-.short-info__gift-icon {
-  margin: -3px 0 17px 3px;
-
-  @media (min-width: @tablet-width) {
-    margin: 0 0 19px 2px;
   }
 }

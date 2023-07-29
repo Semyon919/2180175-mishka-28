@@ -6,6 +6,14 @@
   @media (min-width: @tablet-width) {
     margin-bottom: 57px;
   }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    height: 457px;
+    width: 527px;
+    top: 0;
+    right: 49px;
+  }
 }
 
 .map__frame {
@@ -19,6 +27,12 @@
     width: calc(100% + 100px);
     left: -50px;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 527px;
+    height: 100%;
+    left: 0;
+  }
 }
 
 .map__image {
@@ -30,5 +44,11 @@
   @media (min-width: @tablet-width) {
     width: calc(100% + 100px);
     left: -50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 527px;
+    height: 100%;
+    left: 0;
   }
 }
