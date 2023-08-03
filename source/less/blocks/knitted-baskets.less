@@ -8,7 +8,7 @@
     content: "";
     position: absolute;
     background-image: url("../../img/zigzag-line-mobile.svg");
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: cover;
     width: 100%;
     height: 6px;
@@ -43,10 +43,12 @@
 .knitted-baskets__block {
   display: flex;
   flex-wrap: wrap;
+  width: 260px;
   justify-content: space-between;
 
   @media (min-width: @tablet-width) {
     margin: 0 0 33px 0;
+    width: 100%;
   }
 
   @media (min-width: @desktop-width) {
@@ -210,6 +212,7 @@
 
 .knitted-baskets__image {
   margin: 0 0 22px 0;
+  width: 100%;
 
   @media (min-width: @tablet-width) {
     width: 334px;

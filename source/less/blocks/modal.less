@@ -1,0 +1,173 @@
+.modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  top: 0;
+  left: 0;
+  z-index: 2;
+  padding: 100% 0;
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    padding: 45% 101px 65% 101px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 17% 101px 23%;
+  }
+}
+
+.modal__block {
+  position: relative;
+  width: 100%;
+  min-height: 336px;
+  background-color: #ffffff;
+  box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
+  padding: 29px 30px 46px 30px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    top: 0;
+    left: 0;
+    background-color: #c0c0c0;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 566px;
+    border: 1px solid #c6c6c6;
+    padding: 38px 105px 44px 105px;
+    margin: 0 auto;
+
+    &::before {
+      display: none;
+    }
+  }
+}
+
+.modal__title {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30px;
+  margin: 0 0 15px 0;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    line-height: 57px;
+    margin: 0 0 11px 0;
+  }
+}
+
+.modal__mobile-gap {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.modal__text {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #444444;
+  margin: 0 0 22px 0;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 17px;
+    margin: 0 0 19px 0;
+  }
+}
+
+.modal__list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  gap: 7px;
+  width: 260px;
+  margin: 0 auto 30px auto;
+
+  @media (min-width: @tablet-width) {
+    width: 350px;
+    margin: 0 auto 31px auto;
+  }
+}
+
+.modal__item {
+  width: 82px;
+  min-height: 52px;
+
+  &:hover .modal__control-mark {
+    outline: 2px solid #444444;
+  }
+
+  &:active {
+    outline: 2px solid #63d1bb;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 112px;
+  }
+}
+
+.modal__block-control {
+  position: relative;
+  display: block;
+  min-height: 46px;
+}
+
+.modal__control-input:disabled + .modal__control-mark {
+  border-color: #242424;
+}
+
+.modal__control-mark {
+  position: absolute;
+  top: -3px;
+  left: 0;
+  width: 82px;
+  height: 52px;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 16px;
+  padding: 18px 22px;
+
+  @media (min-width: @tablet-width) {
+    width: 112px;
+  }
+}
+
+/* Radio */
+
+.modal__control-input[type="radio"]:checked {
+  & + .modal__control-mark {
+    outline: 2px solid #63d1bb;
+  }
+}
+
+.modal__button {
+  display: block;
+  width: 260px;
+  min-height: 52px;
+  padding: 0;
+  font-family: "Opensans", sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #63d1bb;
+  border: none;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 99%;
+    margin: 0 0 0 2px;
+  }
+}

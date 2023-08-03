@@ -1,0 +1,353 @@
+.info-block {
+  &:nth-child(1) .info-block__color-block .info-block__title {
+    margin: 0 0 28px 0;
+  }
+
+  &:nth-child(1) .info-block__initials-block .info-block__title {
+    margin: 0 0 29px 0;
+
+    &::before {
+      right: 0;
+      top: 7px;
+    }
+  }
+}
+
+//type-block
+
+.info-block__type-block {
+  position: relative;
+  padding: 0;
+  margin: 0 0 26px 0;
+  border: none;
+}
+
+.info-block__title {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 16px;
+  margin: 0 0 30px 0;
+  color: #63d1bb;
+  padding: 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 1px;
+    background-color: #62d1ba;
+    right: 20px;
+    top: 8px;
+  }
+}
+
+.info-block__filter-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.info-block__filter-item {
+  &:nth-child(2) .info-block__control {
+    padding: 12px 65px 10px 60px;
+  }
+}
+
+.info-block__control {
+  position: relative;
+  display: block;
+  min-height: 46px;
+  width: 280px;
+  padding: 6px 65px 10px 60px;
+
+  &:hover .info-block__control-mark,
+  &:hover .info-block__control-mark-checkbox {
+    background-color: #e5e5e5;
+  }
+
+  &:active .info-block__control-mark,
+  &:active .info-block__control-mark-checkbox {
+    background-color: #d5d5d5;
+  }
+
+  &:active .info-block__control-mark::before,
+  &:active .info-block__control-mark-checkbox::before {
+    opacity: 0.3;
+  }
+
+  &:focus .info-block__control-mark,
+  &:focus .info-block__control-mark-checkbox {
+    outline: 1px solid #000000;
+  }
+}
+
+.info-block__control-mark {
+  position: absolute;
+  top: 1px;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #444444;
+  background-color: #f2f2f2;
+}
+
+.info-block__control-input:disabled + .info-block__control-mark {
+  border-color: #242424;
+}
+
+/* Radio */
+.info-block__control-input[type="radio"] + .info-block__control-mark {
+  border-radius: 50%;
+}
+
+.info-block__control-input[type="radio"]:checked {
+  & + .info-block__control-mark::before {
+    position: absolute;
+    top: 11px;
+    left: 10px;
+    width: 18px;
+    height: 18px;
+    background-color: #62d1ba;
+    border-radius: 50%;
+    content: "";
+  }
+}
+
+.info-block__text {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+//color-block
+
+.info-block__color-block {
+  position: relative;
+  padding: 0;
+  margin: 0 0 23px 0;
+  border: none;
+}
+
+.info-block__filter-list-checkbox {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.info-block__filter-item-checkbox {
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
+
+  &:not(:last-child) .info-block__control {
+    padding: 8px 140px 19px 61px;
+  }
+
+  &:last-child .info-block__control {
+    padding: 8px 140px 19px 61px;
+  }
+}
+
+/* Checkbox */
+.info-block__control-mark-checkbox {
+  position: absolute;
+  top: -3px;
+  left: 0;
+  width: 38px;
+  height: 38px;
+  border: 2px solid #444444;
+}
+
+.info-block__control-checkbox[type="checkbox"]:checked {
+  & + .info-block__control-mark-checkbox::before {
+    position: absolute;
+    background-image: url("../../img/tick.svg");
+    background-repeat: no-repeat;
+    content: "";
+    height: 23px;
+    width: 24px;
+    top: 9px;
+    left: 5px;
+  }
+}
+
+//initials-block
+
+.info-block__initials-block {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.info-block__initials-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.info-block__initials-item {
+  position: relative;
+  margin: 0 0 22px 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #000000;
+    bottom: 1px;
+  }
+
+  &:nth-child(3) {
+    &::before {
+      bottom: 2px;
+    }
+  }
+}
+
+.info-block__item-title {
+  display: block;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.info-block__list-input {
+  width: 100%;
+  min-height: 52px;
+  border: none;
+  padding: 0;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #444444;
+}
+
+.info-block__list-input::placeholder {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #b3b3b3;
+}
+
+//contacts-block
+
+.info-block__contacts-block {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.info-block__contacts-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.info-block__contacts-item {
+  position: relative;
+  margin: 0 0 35px 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #000000;
+    bottom: 0;
+  }
+
+  &:nth-child(1) .info-block__contacts-input {
+    background-image: url("../../img/phone.svg");
+    background-repeat: no-repeat;
+    background-position: right 10px;
+  }
+
+  &:nth-child(2) .info-block__contacts-input {
+    background-image: url("../../img/mail.svg");
+    background-repeat: no-repeat;
+    background-position: right 10px;
+  }
+}
+
+.info-block__contacts-input {
+  width: 100%;
+  min-height: 52px;
+  padding: 0;
+  border: none;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #b3b3b3;
+}
+
+.info-block__contacts-input::placeholder {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #b3b3b3;
+}
+
+// add-block
+
+.info-block__add-block {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.info-block__textarea-feedback {
+  width: 100%;
+  min-height: 142px;
+  resize: none;
+  border: 2px solid #444444;
+  padding: 17px;
+  font-family: "Opensans", sans-serif;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #000000;
+  margin: 0 0 17px 0;
+
+  &:hover {
+    border: 2px solid #62d1ba;
+  }
+
+  &:active {
+    border: 2px solid #62d1ba;
+  }
+}
+
+.info-block__textarea-feedback::placeholder {
+  font-family: "Opensans", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #b3b3b3;
+}
+
+.info-block__add-text {
+  display: block;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  margin: 0 0 30px 0;
+}
+
+.info-block__add-button {
+  width: 100%;
+  min-height: 52px;
+  background-color: #ffffff;
+  border: 2px solid #444444;
+  padding: 0;
+  font-family: "Opensans", sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 16px;
+  color: #444444;
+  margin: 0 0 55px;
+}

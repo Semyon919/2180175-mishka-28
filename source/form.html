@@ -82,14 +82,230 @@
       </div>
     </header>
     <main class="form-main">
-      <h2 class="form-main__title">
-        Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму
-        заказа и мы свяжемся с вами, чтобы уточнить детали.
-      </h2>
-      <section class="type">
-        <h3 class="type__title">ТИП</h3>
-      </section>
+      <form action="#" class="info-block">
+        <h1 class="form-main__title">
+          Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую
+          форму заказа и мы свяжемся с вами, чтобы уточнить детали.
+        </h1>
+        <fieldset class="info-block__type-block">
+          <legend class="info-block__title">ТИП</legend>
+          <ul class="info-block__filter-list">
+            <li class="info-block__filter-item">
+              <label class="info-block__control">
+                <input
+                  class="visually-hidden info-block__control-input"
+                  type="radio"
+                  name="product-group"
+                  value="care-products"
+                  checked
+                />
+                <span class="info-block__control-mark"></span>
+                <span class="info-block__text">Аксессуар для интерьера</span>
+              </label>
+            </li>
+            <li class="info-block__filter-item">
+              <label class="info-block__control">
+                <input
+                  class="visually-hidden info-block__control-input"
+                  type="radio"
+                  name="product-group"
+                  value="accessories"
+                />
+                <span class="info-block__control-mark"></span>
+                <span class="info-block__text">Детская игрушка</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="info-block__color-block">
+          <legend class="info-block__title">ЦВЕТ</legend>
+          <ul class="info-block__filter-list-checkbox">
+            <li class="info-block__filter-item-checkbox">
+              <label class="info-block__control">
+                <input
+                  class="visually-hidden info-block__control-checkbox"
+                  type="checkbox"
+                  name="product-group"
+                  checked
+                />
+                <span class="info-block__control-mark-checkbox"></span>
+                <span class="info-block__text">Белый</span>
+              </label>
+            </li>
+            <li class="info-block__filter-item-checkbox">
+              <label class="info-block__control">
+                <input
+                  class="visually-hidden info-block__control-checkbox"
+                  type="checkbox"
+                  name="product-group"
+                  checked
+                />
+                <span class="info-block__control-mark-checkbox"></span>
+                <span class="info-block__text">Серый</span>
+              </label>
+            </li>
+            <li class="info-block__filter-item-checkbox">
+              <label class="info-block__control">
+                <input
+                  class="visually-hidden info-block__control-checkbox"
+                  type="checkbox"
+                  name="product-group"
+                />
+                <span class="info-block__control-mark-checkbox"></span>
+                <span class="info-block__text">Тиффани</span>
+              </label>
+            </li>
+            <li class="info-block__filter-item-checkbox">
+              <label class="info-block__control">
+                <input
+                  class="visually-hidden info-block__control-checkbox"
+                  type="checkbox"
+                  name="product-group"
+                />
+                <span class="info-block__control-mark-checkbox"></span>
+                <span class="info-block__text">Черный</span>
+              </label>
+            </li>
+            <li class="info-block__filter-item-checkbox">
+              <label class="info-block__control">
+                <input
+                  class="visually-hidden info-block__control-checkbox"
+                  type="checkbox"
+                  name="product-group"
+                />
+                <span class="info-block__control-mark-checkbox"></span>
+                <span class="info-block__text">Розовый</span>
+              </label>
+            </li>
+            <li class="info-block__filter-item-checkbox">
+              <label class="info-block__control">
+                <input
+                  class="visually-hidden info-block__control-checkbox"
+                  type="checkbox"
+                  name="product-group"
+                />
+                <span class="info-block__control-mark-checkbox"></span>
+                <span class="info-block__text">Оранжевый</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="info-block__initials-block">
+          <legend class="info-block__title">ФИО</legend>
+          <ul class="info-block__initials-list">
+            <li class="info-block__initials-item">
+              <label class="info-block__item-title">Имя:</label>
+              <input
+                type="text"
+                class="info-block__list-input"
+                placeholder="Введите ваше имя*"
+              />
+            </li>
+            <li class="info-block__initials-item">
+              <label class="info-block__item-title">Фамилия:</label>
+              <input
+                type="text"
+                class="info-block__list-input"
+                placeholder="Укажите фамилию*"
+              />
+            </li>
+            <li class="info-block__initials-item">
+              <label class="info-block__item-title">Отчество:</label>
+              <input
+                type="text"
+                class="info-block__list-input"
+                placeholder="Отчество, если желаете"
+              />
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="info-block__contacts-block">
+          <ul class="info-block__contacts-list">
+            <li class="info-block__contacts-item">
+              <label class="info-block__title">ТЕЛ</label>
+              <input
+                type="tel"
+                class="info-block__contacts-input"
+                placeholder="+7 ХХХ ХХХ ХХ ХХ*"
+              />
+            </li>
+            <li class="info-block__contacts-item">
+              <label class="info-block__title">E-MAIL</label>
+              <input
+                type="email"
+                class="info-block__contacts-input"
+                placeholder="Ваш Email*"
+              />
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="info-block__add-block">
+          <legend class="info-block__title">ДОП</legend>
+          <textarea
+            name="emotions-feedback"
+            rows="5"
+            class="info-block__textarea-feedback"
+            placeholder="Опишите все ваши пожелания к заказу"
+          ></textarea>
+          <span class="info-block__add-text"
+            >*Поля обязательны для заполнения</span
+          >
+          <button type="button" class="info-block__add-button">
+            ОТПРАВИТЬ ЗАКАЗ
+          </button>
+        </fieldset>
+      </form>
     </main>
+    <footer class="footer">
+      <svg
+        width="102"
+        height="34"
+        viewBox="0 0 102 34"
+        class="footer__logo-tablet"
+      >
+        <use href="img/sprite.svg#logo-tablet-footer"></use>
+      </svg>
+
+      <ul class="footer__list">
+        <li class="footer__item">
+          <a href="#" class="footer__link">
+            <svg width="27" height="18" viewBox="0 0 27 18" class="footer__vk">
+              <use href="img/sprite.svg#footer-vk"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">
+            <svg
+              width="24"
+              height="20"
+              viewBox="0 0 24 20"
+              class="footer__youtube"
+            >
+              <use href="img/sprite.svg#footer-youtube"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">
+            <svg
+              width="20"
+              height="18"
+              viewBox="0 0 20 18"
+              class="footer__telegram"
+            >
+              <use href="img/sprite.svg#footer-telegram"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <a href="#" class="footer__block">
+        <p class="footer__text">Разработано</p>
+        <svg width="27" height="35" viewBox="0 0 27 35" class="footer__logo">
+          <use href="img/sprite.svg#htmlacademy-footer"></use>
+        </svg>
+      </a>
+    </footer>
     <script src="js/script.min.js"></script>
   </body>
 </html>
