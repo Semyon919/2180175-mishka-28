@@ -16,9 +16,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
-    <div class="page-container">
-      <header class="header">
-        <a href="#" class="header__link">
+    <header class="header">
+      <div class="header__container">
+        <a href="index.html" class="header__link">
           <svg
             width="86"
             height="35"
@@ -81,11 +81,13 @@
           </button>
         </nav>
         <section class="header__title-block title-block">
-          <h1 class="title-block__title">
-            Милые штуки <br class="title-block__gap-before" />
-            ручной <br class="title-block__gap-after" />
-            работы для дома
-          </h1>
+          <div class="title-block__background-block">
+            <h1 class="title-block__title">
+              Милые штуки <br class="title-block__gap-before" />
+              ручной <br class="title-block__gap-after" />
+              работы для дома
+            </h1>
+          </div>
           <ul class="title-block__list">
             <li class="title-block__item-interior">
               <a href="#" class="title-block__item-link">Предметы интерьера</a>
@@ -95,7 +97,9 @@
             </li>
           </ul>
         </section>
-      </header>
+      </div>
+    </header>
+    <div class="page-container">
       <main class="main">
         <section class="knitted-baskets">
           <div class="knitted-baskets__block">
@@ -290,7 +294,9 @@
           <a href="#" class="contacts__link">НАпишите нам</a>
         </section>
       </main>
-      <footer class="footer">
+    </div>
+    <footer class="footer">
+      <div class="footer__container">
         <svg
           width="102"
           height="34"
@@ -344,54 +350,54 @@
             <use href="img/sprite.svg#htmlacademy-footer"></use>
           </svg>
         </a>
-      </footer>
-      <!--Для того, чтобы включить модальное окно уберите display: none;
+      </div>
+    </footer>
+    <!--Для того, чтобы включить модальное окно уберите display: none;
     с класса "modal"-->
-      <div class="modal">
-        <div class="modal__block">
-          <h3 class="modal__title">
-            Добавить <br class="modal__mobile-gap" />
-            в корзину
-          </h3>
-          <p class="modal__text">Выберите размер:</p>
-          <ul class="modal__list">
-            <li class="modal__item">
-              <label class="modal__block-control">
-                <input
-                  class="visually-hidden modal__control-input"
-                  type="radio"
-                  name="product-group"
-                  value="shaving-supplies"
-                  checked
-                />
-                <span class="modal__control-mark">S</span>
-              </label>
-            </li>
-            <li class="modal__item">
-              <label class="modal__block-control">
-                <input
-                  class="visually-hidden modal__control-input"
-                  type="radio"
-                  name="product-group"
-                  value="shaving-supplies"
-                />
-                <span class="modal__control-mark">M</span>
-              </label>
-            </li>
-            <li class="modal__item">
-              <label class="modal__block-control">
-                <input
-                  class="visually-hidden modal__control-input"
-                  type="radio"
-                  name="product-group"
-                  value="shaving-supplies"
-                />
-                <span class="modal__control-mark">L</span>
-              </label>
-            </li>
-          </ul>
-          <button type="button" class="modal__button">Добавить</button>
-        </div>
+    <div class="modal">
+      <div class="modal__block">
+        <h3 class="modal__title">
+          Добавить <br class="modal__mobile-gap" />
+          в корзину
+        </h3>
+        <p class="modal__text">Выберите размер:</p>
+        <ul class="modal__list">
+          <li class="modal__item">
+            <label class="modal__block-control">
+              <input
+                class="visually-hidden modal__control-input"
+                type="radio"
+                name="product-group"
+                value="shaving-supplies"
+                checked
+              />
+              <span class="modal__control-mark">S</span>
+            </label>
+          </li>
+          <li class="modal__item">
+            <label class="modal__block-control">
+              <input
+                class="visually-hidden modal__control-input"
+                type="radio"
+                name="product-group"
+                value="shaving-supplies"
+              />
+              <span class="modal__control-mark">M</span>
+            </label>
+          </li>
+          <li class="modal__item">
+            <label class="modal__block-control">
+              <input
+                class="visually-hidden modal__control-input"
+                type="radio"
+                name="product-group"
+                value="shaving-supplies"
+              />
+              <span class="modal__control-mark">L</span>
+            </label>
+          </li>
+        </ul>
+        <button type="button" class="modal__button">Добавить</button>
       </div>
     </div>
     <script src="js/script.min.js"></script>
